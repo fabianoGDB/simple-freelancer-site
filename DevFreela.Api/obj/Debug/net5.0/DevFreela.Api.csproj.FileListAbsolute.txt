@@ -32,3 +32,5 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\refint\
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.pdb
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.genruntimeconfig.cache
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\ref\DevFreela.Api.dll
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\devFreela.Core.dll
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\devFreela.Core.pdb

@@ -91,6 +91,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "devFreela.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/devFreela.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/devFreela.Core.dll": {}
+        }
       }
     }
   },
@@ -201,11 +211,17 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "devFreela.Core/1.0.0": {
+      "type": "project",
+      "path": "../DevFreela.Core/devFreela.Core.csproj",
+      "msbuildProject": "../DevFreela.Core/devFreela.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "devFreela.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -239,7 +255,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj": {
+              "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
