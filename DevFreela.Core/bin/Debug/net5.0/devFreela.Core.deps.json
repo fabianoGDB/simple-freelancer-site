@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "devFreela.Core/1.0.0": {
+      "DevFreela.Core/1.0.0": {
         "runtime": {
-          "devFreela.Core.dll": {}
+          "DevFreela.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "devFreela.Core/1.0.0": {
+    "DevFreela.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -92,14 +92,40 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "devFreela.Core/1.0.0": {
+      "DevFreela.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DevFreela.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DevFreela.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevFreela.Application.dll": {}
+        }
+      },
+      "DevFreela.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/devFreela.Core.dll": {}
+          "bin/placeholder/DevFreela.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/devFreela.Core.dll": {}
+          "bin/placeholder/DevFreela.Core.dll": {}
+        }
+      },
+      "DevFreela.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DevFreela.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DevFreela.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevFreela.Infrastructure.dll": {}
         }
       }
     }
@@ -212,16 +238,28 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "devFreela.Core/1.0.0": {
+    "DevFreela.Application/1.0.0": {
       "type": "project",
-      "path": "../DevFreela.Core/devFreela.Core.csproj",
-      "msbuildProject": "../DevFreela.Core/devFreela.Core.csproj"
+      "path": "../DevFreela.Application/DevFreela.Application.csproj",
+      "msbuildProject": "../DevFreela.Application/DevFreela.Application.csproj"
+    },
+    "DevFreela.Core/1.0.0": {
+      "type": "project",
+      "path": "../DevFreela.Core/DevFreela.Core.csproj",
+      "msbuildProject": "../DevFreela.Core/DevFreela.Core.csproj"
+    },
+    "DevFreela.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../DevFreela.Infrastructure/DevFreela.Infrastructure.csproj",
+      "msbuildProject": "../DevFreela.Infrastructure/DevFreela.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Swashbuckle.AspNetCore >= 5.6.3",
-      "devFreela.Core >= 1.0.0"
+      "DevFreela.Application >= 1.0.0",
+      "DevFreela.Core >= 1.0.0",
+      "DevFreela.Infrastructure >= 1.0.0",
+      "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
   "packageFolders": {
@@ -256,8 +294,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj": {
-              "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj"
+            "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Application\\DevFreela.Application.csproj": {
+              "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Application\\DevFreela.Application.csproj"
+            },
+            "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\DevFreela.Core.csproj": {
+              "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\DevFreela.Core.csproj"
+            },
+            "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
             }
           }
         }
