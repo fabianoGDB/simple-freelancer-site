@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Services.Implementation;
 using DevFreela.Application.Services.Interface;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,7 +30,6 @@ namespace DevFreela.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             var connStr = Configuration.GetConnectionString("DefaultConnection");
@@ -40,13 +41,14 @@ namespace DevFreela.Api
             services.AddScoped<IUserService, UserService>();
 
             services.AddControllers();
+
+            services.AddMediatR(typeof(CreateProjectCommand));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DevFreela.Api", Version = "v1" });
             });
         }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

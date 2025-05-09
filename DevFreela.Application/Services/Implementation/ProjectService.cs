@@ -23,43 +23,43 @@ namespace DevFreela.Application.Services.Implementation
             _dbContext = dbContext;
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
-        public int Create(NewProductInputModel inputModel)
-        {
-            var project = new Project(
-                inputModel.Title,
-                inputModel.Descripton,
-                inputModel.IdClient,
-                inputModel.IdFreelancer,
-                inputModel.TotalCost
-                );
+        //public int Create(NewProductInputModel inputModel)
+        //{
+        //    var project = new Project(
+        //        inputModel.Title,
+        //        inputModel.Descripton,
+        //        inputModel.IdClient,
+        //        inputModel.IdFreelancer,
+        //        inputModel.TotalCost
+        //        );
 
-            _dbContext.Projects.Add(project);
-            _dbContext.SaveChanges();
+        //    _dbContext.Projects.Add(project);
+        //    _dbContext.SaveChanges();
 
-            return project.Id;
-        }
+        //    return project.Id;
+        //}
 
-        public void CreateComment(CreateCommentInputModel inputModel)
-        {
-            var projectComment = new ProjectComment(
-                inputModel.Content,
-                inputModel.IdProject,
-                inputModel.IdUser
-                );
+        //public void CreateComment(CreateCommentInputModel inputModel)
+        //{
+        //    var projectComment = new ProjectComment(
+        //        inputModel.Content,
+        //        inputModel.IdProject,
+        //        inputModel.IdUser
+        //        );
 
-            _dbContext.ProjectComments.Add(projectComment);
+        //    _dbContext.ProjectComments.Add(projectComment);
 
-            _dbContext.SaveChanges();
-        }
+        //    _dbContext.SaveChanges();
+        //}
 
-        public void Delete(int id)
-        {
-            var project = _dbContext.Projects.FirstOrDefault(p => p.Id == id);
+        //public void Delete(int id)
+        //{
+        //    var project = _dbContext.Projects.FirstOrDefault(p => p.Id == id);
             
-            project.Cancel();
+        //    project.Cancel();
 
-            _dbContext.SaveChanges();
-        }
+        //    _dbContext.SaveChanges();
+        //}
 
         public void Finish(int id)
         {
@@ -119,13 +119,13 @@ namespace DevFreela.Application.Services.Implementation
             }
         }
 
-        public void Update(UpdateProductInputModel inputModel)
-        {
-            var project = _dbContext.Projects.FirstOrDefault(p => p.Id == inputModel.Id);
+        //public void Update(UpdateProductInputModel inputModel)
+        //{
+        //    var project = _dbContext.Projects.FirstOrDefault(p => p.Id == inputModel.Id);
 
-            project.Update(inputModel.Title, inputModel.Descripton, inputModel.TotalCost);
+        //    project.Update(inputModel.Title, inputModel.Descripton, inputModel.TotalCost);
 
-            _dbContext.SaveChanges();
-        }
+        //    _dbContext.SaveChanges();
+        //}
     }
 }
