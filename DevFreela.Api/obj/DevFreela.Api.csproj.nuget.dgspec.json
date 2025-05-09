@@ -35,8 +35,8 @@
               "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Application\\DevFreela.Application.csproj": {
                 "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Application\\DevFreela.Application.csproj"
               },
-              "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj": {
+                "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj"
               },
               "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
@@ -60,6 +60,12 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -137,6 +143,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -271,6 +283,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
