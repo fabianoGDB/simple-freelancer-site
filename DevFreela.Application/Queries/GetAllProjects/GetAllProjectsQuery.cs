@@ -1,14 +1,14 @@
 ﻿using DevFreela.Application.ViewModels;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Application.Services.Interface
+namespace DevFreela.Application.Queries.GetAllProjects
 {
-    public interface ISkillService
+    public class GetAllProjectsQuery : IRequest<List<ProjectViewModel>>
     {
-        //List<SkillViewModel> GetAll();
     }
 }

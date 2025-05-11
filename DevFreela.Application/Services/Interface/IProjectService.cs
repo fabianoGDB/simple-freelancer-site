@@ -11,8 +11,8 @@ namespace DevFreela.Application.Services.Interface
     public interface IProjectService
     {
 
-        List<ProjectViewModel> GetAll(string query);
-        ProjectDatailsViewModel GetById(int id);
+        //List<ProjectViewModel> GetAll(string query);
+        //ProjectDatailsViewModel GetById(int id);
         void Start(int  id);
         void Finish(int id);
 

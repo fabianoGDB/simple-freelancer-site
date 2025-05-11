@@ -70,36 +70,36 @@ namespace DevFreela.Application.Services.Implementation
             _dbContext.SaveChanges();
         }
 
-        public List<ProjectViewModel> GetAll(string query)
-        {
-            var projects = _dbContext.Projects;
-            var projectsViewModel = projects.Select(
-                p => new ProjectViewModel(p.Id, p.Title, p.CreatedAt)).ToList();
+        //public List<ProjectViewModel> GetAll(string query)
+        //{
+        //    var projects = _dbContext.Projects;
+        //    var projectsViewModel = projects.Select(
+        //        p => new ProjectViewModel(p.Id, p.Title, p.CreatedAt)).ToList();
 
-            return projectsViewModel;
-        }
+        //    return projectsViewModel;
+        //}
 
-        public ProjectDatailsViewModel GetById(int id)
-        {
-            var project = _dbContext.Projects
-                .Include(p => p.Client)
-                .Include(p => p.Freelancer)
-                .FirstOrDefault(p => p.Id == id);
+        //public ProjectDatailsViewModel GetById(int id)
+        //{
+        //    var project = _dbContext.Projects
+        //        .Include(p => p.Client)
+        //        .Include(p => p.Freelancer)
+        //        .FirstOrDefault(p => p.Id == id);
 
-            var detailProject = new ProjectDatailsViewModel
-            (
-                project.Id,
-                project.Title,
-                project.Description,
-                project.TotalCost,
-                project.StartedAt,
-                project.FinishedAt,
-                project.Client.Name,
-                project.Freelancer.Name
-            );
+        //    var detailProject = new ProjectDatailsViewModel
+        //    (
+        //        project.Id,
+        //        project.Title,
+        //        project.Description,
+        //        project.TotalCost,
+        //        project.StartedAt,
+        //        project.FinishedAt,
+        //        project.Client.Name,
+        //        project.Freelancer.Name
+        //    );
 
-            return detailProject;
-        }
+        //    return detailProject;
+        //}
 
         public void Start(int id)
         {

@@ -20,19 +20,19 @@ namespace DevFreela.Application.Services.Implementation
             _dbContext = dbContext;
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
-        public List<SkillViewModel> GetAll()
-        {
-            using (var sqlConnection = new SqlConnection(_connectionString))
-            {
-                var script = "SELECT Id, Description FROM Skills";
+        //public List<SkillViewModel> GetAll()
+        //{
+        //    using (var sqlConnection = new SqlConnection(_connectionString))
+        //    {
+        //        var script = "SELECT Id, Description FROM Skills";
 
-                return sqlConnection.Query<SkillViewModel>(script).ToList();
-            }
-            //var skills = _dbContext.Skills;
-            //var skillsViewModel = skills.Select(
-            //    p => new SkillViewModel(p.Id, p.Description)).ToList();
+        //        return sqlConnection.Query<SkillViewModel>(script).ToList();
+        //    }
+        //    //var skills = _dbContext.Skills;
+        //    //var skillsViewModel = skills.Select(
+        //    //    p => new SkillViewModel(p.Id, p.Description)).ToList();
 
-            //return skillsViewModel;
-        }
+        //    //return skillsViewModel;
+        //}
     }
 }
