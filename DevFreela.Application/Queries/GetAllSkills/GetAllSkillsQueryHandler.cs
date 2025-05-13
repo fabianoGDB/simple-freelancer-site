@@ -1,4 +1,5 @@
 ﻿using DevFreela.Application.ViewModels;
+using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using System;
@@ -12,14 +13,14 @@ namespace DevFreela.Application.Queries.GetAllSkills
 {
     public class GetAllSkillsQueryHandler : IRequestHandler<GetAllSkillsQuery, List<SkillViewModel>>
     {
-        private readonly DevFreelaDbContext _dbContext;
-        public GetAllSkillsQueryHandler(DevFreelaDbContext dbContext)
+        private readonly ISkillRepository _repostory;
+        public GetAllSkillsQueryHandler(ISkillRepository repository)
         {
-            _dbContext = dbContext;
+            _repostory = repository;
         }
         public async Task<List<SkillViewModel>> Handle(GetAllSkillsQuery request, CancellationToken cancellationToken)
         {
-            var skills = _dbContext.Skills;
+            var skills = await _repostory.GetAll();
             var skillsViewModel = skills.Select(
                 p => new SkillViewModel(p.Id, p.Description)).ToList();
 
