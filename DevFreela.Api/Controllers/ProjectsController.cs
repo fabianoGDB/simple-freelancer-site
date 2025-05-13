@@ -32,7 +32,7 @@ namespace DevFreela.Api.Controllers
         public async Task<IActionResult> GetAll([FromQuery] string query)
         {
             var querySend = new GetAllProjectsQuery();
-            var projects = _mediator.Send(querySend);
+            var projects = await _mediator.Send(querySend);
             return Ok(projects);
         }
 

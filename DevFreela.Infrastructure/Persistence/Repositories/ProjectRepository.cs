@@ -20,7 +20,7 @@ namespace DevFreela.Infrastructure.Persistence.Repositories
         public async Task<List<Project>> GetAll() {
             try
             {
-                var projects = await _dbContext.Projects.Include(ProjectComment).ToListAsync();
+                var projects = await _dbContext.Projects.ToListAsync();
                 return projects;
             }
             catch(Exception ex)
