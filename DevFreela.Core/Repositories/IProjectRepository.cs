@@ -8,7 +8,9 @@ namespace DevFreela.Core.Repositories
 {
     public interface IProjectRepository
     {
-        Task<List<Project>> GetAll();
-        Task<Project> GetById(int id);
+        Task<List<Project>> GetAllAsync();
+        Task<Project> GetByIdAsync(int id);
+        Task<int> AddAsync(Project project);
+        Task StartAsync(int id);
     }
 }
