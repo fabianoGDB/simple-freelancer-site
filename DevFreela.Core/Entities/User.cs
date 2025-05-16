@@ -7,11 +7,13 @@ namespace DevFreela.Core.Entities
 {
     public class User : BaseEntity
     {
-        public User(string name, string email, DateTime birthDate)
+        public User(string name, string email, DateTime birthDate, string password, string role)
         {
             Name = name;
             Email = email;
             BirthDate = birthDate;
+            Password = password;
+            Role = role;
 
 
             CreatedAt = DateTime.Now;
@@ -25,6 +27,8 @@ namespace DevFreela.Core.Entities
 
         public string Name { get; private set; }
         public string Email { get; private set; }
+        public string Password { get; private set; }
+        public string Role { get; private set; }
         public DateTime BirthDate { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public bool Active { get; set; }

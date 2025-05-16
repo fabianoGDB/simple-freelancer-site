@@ -59,7 +59,6 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFree
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.AssemblyInfoInputs.cache
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.AssemblyInfo.cs
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.csproj.CoreCompileInputs.cache
-C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.sourcelink.json
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.RazorTargetAssemblyInfo.cache
