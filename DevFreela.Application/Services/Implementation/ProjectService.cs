@@ -61,14 +61,14 @@ namespace DevFreela.Application.Services.Implementation
         //    _dbContext.SaveChanges();
         //}
 
-        public void Finish(int id)
-        {
-            var project = _dbContext.Projects.FirstOrDefault(p => p.Id == id);
+        //public void Finish(int id)
+        //{
+        //    var project = _dbContext.Projects.FirstOrDefault(p => p.Id == id);
 
-            project.Finish();
+        //    project.Finish();
 
-            _dbContext.SaveChanges();
-        }
+        //    _dbContext.SaveChanges();
+        //}
 
         //public List<ProjectViewModel> GetAll(string query)
         //{

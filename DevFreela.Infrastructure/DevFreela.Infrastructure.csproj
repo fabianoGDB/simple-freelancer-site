@@ -1,6 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Persistence\Configurations\**" />
+    <EmbeddedResource Remove="Persistence\Configurations\**" />
+    <None Remove="Persistence\Configurations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DevFreela.Core\DevFreela.Core.csproj" />
   </ItemGroup>
 

@@ -1,9 +1,10 @@
 ﻿using DevFreela.Core.Entities;
 using DevFreela.Core.Repositories;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,31 +13,51 @@ namespace DevFreela.Infrastructure.Persistence.Repositories
     public class ProjectRepository : IProjectRepository
     {
         private readonly DevFreelaDbContext _dbContext;
-        public ProjectRepository(DevFreelaDbContext dbContext)
+        private readonly string _connectionString;
+        public ProjectRepository(DevFreelaDbContext dbContext, IConfiguration configuration)
         {
             _dbContext = dbContext;
+            _connectionString = configuration.GetConnectionString("DevFreelaCs");
         }
 
-        public async Task<List<Project>> GetAll() {
-            try
-            {
-                var projects = await _dbContext.Projects.ToListAsync();
-                return projects;
-            }
-            catch(Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<Project> GetById(int id)
+        public async Task<List<Project>> GetAllAsync()
         {
-            var project = await _dbContext.Projects
+            return await _dbContext.Projects.ToListAsync();
+        }
+
+        public async Task<Project> GetDetailsByIdAsync(int id)
+        {
+            return await _dbContext.Projects
                 .Include(p => p.Client)
                 .Include(p => p.Freelancer)
-                .FirstOrDefaultAsync(p => p.Id == id);
+                .SingleOrDefaultAsync(p => p.Id == id);
+        }
 
-            return project;
+        public async Task AddAsync(Project project)
+        {
+            await _dbContext.Projects.AddAsync(project);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task StartAsync(Project project)
+        {
+            
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<Project> GetByIdAsync(int id)
+        {
+            return await _dbContext.Projects.SingleOrDefaultAsync(p => p.Id == id);
+        }
+
+        public async Task AddCommentAsync(ProjectComment projectComment)
+        {
+            await _dbContext.ProjectComments.AddAsync(projectComment);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

@@ -13,8 +13,8 @@ namespace DevFreela.Application.Services.Interface
 
         //List<ProjectViewModel> GetAll(string query);
         //ProjectDatailsViewModel GetById(int id);
-        void Start(int  id);
-        void Finish(int id);
+        //void Start(int  id);
+        //void Finish(int id);
 
     }
 }

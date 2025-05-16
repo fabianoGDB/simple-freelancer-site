@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DevFreela.Api.Filters;
 using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Services.Implementation;
 using DevFreela.Application.Services.Interface;
+using DevFreela.Application.Validators;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using DevFreela.Infrastructure.Persistence.Repositories;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +41,7 @@ namespace DevFreela.Api
                 options.UseSqlServer(connStr)
             );
 
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
             services.AddScoped<IProjectRepository, ProjectRepository>();
 
@@ -45,7 +49,8 @@ namespace DevFreela.Api
             services.AddScoped<ISkillService, SkillService>();
             services.AddScoped<IUserService, UserService>();
 
-            services.AddControllers();
+            services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());
 
             services.AddMediatR(typeof(CreateProjectCommand));
 

@@ -1,4 +1,6 @@
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.deps.json
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.runtimeconfig.json
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.runtimeconfig.dev.json
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.pdb
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Core.dll
@@ -13,7 +15,5 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net5.0\DevFreela.Infrastructure.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net5.0\refint\DevFreela.Infrastructure.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net5.0\DevFreela.Infrastructure.pdb
-C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net5.0\ref\DevFreela.Infrastructure.dll
-C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.runtimeconfig.json
-C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\bin\Debug\net5.0\DevFreela.Infrastructure.runtimeconfig.dev.json
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net5.0\DevFreela.Infrastructure.genruntimeconfig.cache
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Infrastructure\obj\Debug\net5.0\ref\DevFreela.Infrastructure.dll
