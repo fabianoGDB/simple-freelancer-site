@@ -140,3 +140,5 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.UnitTests\bin\Debug\net5.0\D
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.UnitTests\bin\Debug\net5.0\DevFreela.Application.pdb
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.UnitTests\bin\Debug\net5.0\DevFreela.Core.pdb
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.UnitTests\bin\Debug\net5.0\DevFreela.Infrastructure.pdb
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.UnitTests\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.UnitTests\bin\Debug\net5.0\Moq.dll
