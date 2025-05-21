@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DevFreela.Api.Extensions;
 using DevFreela.Api.Filters;
 using DevFreela.Application.Commands.CreateProject;
+using DevFreela.Application.Consumers;
 using DevFreela.Application.Services.Implementation;
 using DevFreela.Application.Services.Interface;
 using DevFreela.Application.Validators;
@@ -13,6 +15,7 @@ using DevFreela.Core.Services;
 using DevFreela.Infrastructure.Persistence;
 using DevFreela.Infrastructure.Persistence.Repositories;
 using DevFreela.Infrastructure.Services.Auth;
+using DevFreela.Infrastructure.Services.Payments;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -46,14 +49,11 @@ namespace DevFreela.Api
                 options.UseSqlServer(connStr)
             );
 
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<ISkillRepository, SkillRepository>();
-            services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddHttpClient();
 
-            services.AddScoped<IProjectService, ProjectService>();
-            services.AddScoped<ISkillService, SkillService>();
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IAuthService, AuthService>();    
+            services.AddInfrastructure();
+
+            services.AddHostedService<PaymentApprovedConsumer>();
 
             services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)))
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserCommandValidator>());

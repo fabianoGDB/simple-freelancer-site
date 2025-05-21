@@ -25,6 +25,7 @@ namespace DevFreela.UnitTests.Application.Commands
             var createProjectCommand = new CreateProjectCommand
             {
                 Title = "Project Test 1",
+
                 Description = "Project Description Test 1",
                 IdClient = 1,
                 IdFreelancer = 2,

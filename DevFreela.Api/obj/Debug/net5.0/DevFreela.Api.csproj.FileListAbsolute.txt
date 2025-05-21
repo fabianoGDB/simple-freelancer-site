@@ -13,6 +13,7 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\FluentV
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Humanizer.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\MediatR.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -27,6 +28,7 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microso
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\RabbitMQ.Client.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -58,6 +60,7 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFree
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.AssemblyInfoInputs.cache
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.AssemblyInfo.cs
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.csproj.CoreCompileInputs.cache
+C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.sourcelink.json
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.RazorTargetAssemblyInfo.cache
@@ -74,5 +77,3 @@ C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\refint\
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.pdb
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.genruntimeconfig.cache
 C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\ref\DevFreela.Api.dll
-C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\docto\projetos\aspnet-app-simple\DevFreela.Api\obj\Debug\net5.0\DevFreela.Api.MvcApplicationPartsAssemblyInfo.cs

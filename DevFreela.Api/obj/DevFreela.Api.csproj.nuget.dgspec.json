@@ -35,8 +35,8 @@
               "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Application\\DevFreela.Application.csproj": {
                 "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Application\\DevFreela.Application.csproj"
               },
-              "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj": {
+                "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Core\\devFreela.Core.csproj"
               },
               "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\docto\\projetos\\aspnet-app-simple\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
@@ -163,6 +163,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
@@ -313,6 +317,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
